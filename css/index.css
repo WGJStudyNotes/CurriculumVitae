@@ -1,0 +1,347 @@
+#logo{
+    float: left;
+}
+#menu li{
+    float: left;
+    margin-left: 2.5rem;
+}
+#menu li a{
+    font-size: 1.2rem;
+}
+#menu li:hover a::after{
+    opacity: 1;
+    filter: alpha(opacity=1);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+}
+#menu li:hover a::before{
+    opacity: 1;
+    filter: alpha(opacity=1);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+#menu li a::after{
+    content:"]";
+    display: inline-block;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+#menu li a::before{
+    content:"[";
+    display: inline-block;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+#menu ul{
+    float: right;
+    padding-top: 1rem;
+}
+#menu{
+    float: right;
+}
+#search-box{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 28px;
+}
+#header .last-li{
+    width: 30px;
+}
+#search-input{
+    width: 60%;
+    height:28px;
+    position: absolute;
+    background: #279f7c;
+    right: 3rem;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #ffffff;
+    display: none;
+    text-indent: 10px;
+}
+#search-input::-webkit-input-placeholder{
+    color: #ffffff;
+}
+#search-btn{
+    width: 30px;
+    height: 28px;
+    background: #f4f4f4 url('../img/search.png') no-repeat 0px -4px;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    cursor: pointer;
+}
+@media (max-width: 480px){
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    #btn-show{
+        display: block;
+    }
+    /*#btn-hide{*/
+        /*display:none;*/
+    /*}*/
+    #menu{
+        width: 100%;
+    }
+    #menu ul{
+        width: 100%;
+        background: #279f7c;
+    }
+    #menu li{
+        margin-left: 0;
+        float: none;
+    }
+    #search-box{
+        width: 100%;
+    }
+    #search-input{
+        display: block;
+        width: 77%;
+    }
+    #search-btn{
+        display:none;
+    }
+    #header-menu:target .header-nav{
+        display: block;
+    }
+    #header-menu:target .btn-show{
+        display: none;
+    }
+    #header-menu:target .btn-hide{
+        display: block;
+    }
+    #header-nav:target{
+        display: none;
+    }
+}
+#clerafix{
+    padding: 1rem 0;
+}
+#clerafix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#clearfix-left{
+    float: left;
+    padding: 9em 0 0;
+    width: 46%;
+}
+#clearfix-img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    float: right;
+}
+.container:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#clerafix .container{
+    border-bottom:1px solid #CCCCCC;
+}
+#clearfix-left h1{
+    font-size: 3rem;
+}
+#clearfix-left p{
+    display: block;
+    color: #8e8e8e;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    width: 80%;
+    padding: 0.5em 0 0;
+}
+#portfolio{
+    padding-top: 3rem;
+}
+#port-top:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#port-top h3{
+    font-size: 3rem;
+    float: left;
+}
+.port-top-num li{
+    float: left;
+    color: #279f7c;
+    background: #f4f4f4;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    margin-left: 2rem;
+}
+#port-top .select{
+    background: #279f7c;
+    color: #fff;
+}
+#port-top .port-top-num {
+    float: right;
+    -webkit-transform:translateY(50%);
+}
+#portfoliolist:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#portfoliolist .portfoliolist-menu a{
+    display:block;
+}
+.portfoliolist-menu li{
+    float: left;
+    overflow: hidden;
+    margin: 3% 4% 3% 0;
+    width: 29%;
+    position: relative;
+}
+#cover{
+    position:absolute;
+    top:0;
+    left:-100%;
+    width: 340px;
+    height: 248px;
+    background-color: rgba(39,159,116,0.4);
+    -webkit-transition:  left 0.5s ease-out;
+}
+.portfoliolist-menu li a:hover #cover{
+    left:0;
+}
+#cover h1{
+    position: absolute;
+    top:30%;
+    left: 32%;
+    color: #ffffff;
+}
+#cover span{
+    position: absolute;
+    display: block;
+    top:45%;
+    left: 30%;
+    height: 35px;
+    width: 110px;
+    background: black;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+}
+#contact{
+    width: 30%;
+    position: relative;
+}
+#footer{
+    background: #279f7c;
+    padding: 3rem 0rem 0;
+    position:relative;
+}
+#footer:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#ContactMe input{
+    padding: 9px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 0.8rem;
+    font-size: 1em;
+    color: #a3a3a3;
+    border-radius: 5px;
+}
+#ContactMe input:nth-child(3){
+    height: 4rem;
+}
+#contact h4{
+    display: block;
+    text-align:center;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+#contact-btn{
+    margin-right: -20px;
+}
+#contact-btn input{
+    background: #1f6551;
+    color: #fff;
+    font-size: 1.2em;
+    display: block;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 0.4em 1em;
+    margin-right: 20px;
+    float: right;
+}
+#contactinf{
+    width: 30%;
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+}
+#contactinf ul{
+    height:308px;
+    overflow: scroll;
+    overflow-x:hidden ;
+    overflow-y:auto;
+}
+#contactinf p{
+    display: block;
+    clear: both;
+    top:2.5rem;
+    text-indent: 1rem;
+}
+#contactinf li{
+    margin-top: 1rem;
+    border-bottom: 1px dashed #CCCCCC;
+}
+#contactinf h1{
+    float: left;
+}
+#contactinf span{
+    display: block;
+    float: right;
+}
+#message{
+    height:200px;
+    width: 100%;
+    padding: 9px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #a3a3a3;
+}
+

@@ -1,0 +1,20 @@
+require(['jquery','seach'],function($){
+    $(function(){
+        $("#sub").on('click',function(){
+            $com_name=$('#name');
+            $com_content=$('#message');
+            $blig_id=$('#blogId');
+            $.get('welcome/blogCom',{
+                'com_name':$com_name.val(),
+                'com_content':$com_content.val(),
+                'blog_id':$blig_id.val()
+            },function(data){
+                if(data=='success'){
+                    alert('ok');
+                }else{
+                    alert('no');
+                }
+            },'text')
+        })
+    })
+})
